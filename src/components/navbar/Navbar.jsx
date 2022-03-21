@@ -25,7 +25,7 @@ const Navbar = ({ hamburgerOpen, setHamburgerOpen}) => {
                 <a className="contact" href="#contact">CONTACT</a>
               </li>
               <li >
-                <a className="resume" href="#resume">RESUME</a>
+                <a className="resume" href="/assets/Resume.pdf" download>RESUME</a>
               </li>
             </ul>
           </div>

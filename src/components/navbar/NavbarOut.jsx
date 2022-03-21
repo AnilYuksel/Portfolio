@@ -22,7 +22,7 @@ const NavbarOut = ({hamburgerOpen,setHamburgerOpen}) => {
               <Link className="about" to="/about">ABOUT</Link>
               </li>
               <li >
-              <a className="resume" href="#resume">RESUME</a>
+              <a className="resume" href="/assets/Resume.pdf" download>RESUME</a>
               </li>
             </ul>
           </div>
