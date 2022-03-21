@@ -1,0 +1,79 @@
+@import "../../global.scss";
+
+.about {
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin: 25px 0;
+    font-weight: 500;
+    @include middle{
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    @include mobileL{
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  }
+  .content {
+    width: 70%;
+    @include tablet{
+      width: 80%;
+    }
+    @include middle{
+      width: 90%;
+    }
+  }
+  img {
+    float: left;
+    width: 330px;
+    height: 330px;
+    box-shadow: 0.8rem 0.8rem 0 0 #EC0029;
+    display: block;
+    margin: 0 40px 10px 0;
+    @include laptop{
+      width: 280px;
+      height: 280px;
+    }
+    @include tablet{
+      width: 250px;
+      height: 250px;
+    }
+    @include middle{
+      width: 180px;
+      height: 180px;
+    }
+    @include mobileM{
+      width: 120px;
+      height: 120px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    @include middle{
+      font-size: 18px;
+    }
+  }
+  p {
+    font-size: 19px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    text-align: justify;
+    @include tablet{
+      font-size: 16px;
+      margin: 0 0 20px 0;
+    }
+    @include middle{
+      font-size: 12px;
+      margin: 0 0 10px 0;
+    }
+    @include mobileM{
+      font-size: 10px;
+    }
+  }
+}

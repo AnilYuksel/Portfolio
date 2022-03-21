@@ -1,0 +1,95 @@
+@import "../../global.scss";
+
+.works {
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h1 {
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: 300;
+    @include tablet {
+      font-size: 25px;
+    }
+    @include middle {
+      margin-top: 20px;
+    }
+    @include mobileL {
+      margin-top: 10px;
+    }
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .item {
+      width: 500px;
+      height: 400px;
+      margin: 40px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      transition: all 1s ease;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      cursor: pointer;
+      overflow: hidden;
+      @include middle{
+        width: 350px;
+        height: 280px;
+        margin: 20px 20px;
+      }
+      @include mobileL {
+        width: 300px;
+        height: 240px;
+        margin: 15px 15px;
+      }
+      @include mobileM {
+        width: 280px;
+        height: 224px;
+      }
+      .hover {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-size: 28px;
+          font-weight: 500;
+          color: white;
+          @include tablet {
+            font-size: 24px;
+          }
+        }
+        svg {
+          font-size: 200px;
+          font-weight: 100;
+          color: white;
+          @include tablet {
+            font-size: 180px;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+      &:hover {
+        background-color: rgb(40, 40, 40);
+        transform: scale(1.1);
+        img {
+          opacity: 0.1;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

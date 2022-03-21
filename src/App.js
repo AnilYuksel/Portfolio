@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import AboutPage from "./screens/AboutPage"
+import HomePage from "./screens/HomePage";
+import Zamazingo from "./screens/ZamazingoPage";
+import BlogNode from "./screens/BlogNodePage";
+import ABDBMovie from "./screens/ABDBMoviePage";
+import WeatherApp from "./screens/WeatherApp";
+import CurrencyConverter from "./screens/CurrencyConverterPage";
+import WorksPage from "./screens/WorksPage"
+import NetflixClone from "./screens/NetflixClone";
+import "./app.scss"
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />}/>
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/zamazingo" element={<Zamazingo />}/>
+        <Route path="/blognode" element={<BlogNode />}/>
+        <Route path="/abdbmovie" element={<ABDBMovie />}/>
+        <Route path="/weather" element={<WeatherApp />}/>
+        <Route path="/currency" element={<CurrencyConverter />}/>
+        <Route path="/works" element={<WorksPage/>}/>
+        <Route path="/netflix" element={<NetflixClone/>}/>
+      </Routes>
+    </>
+
   );
 }
 
