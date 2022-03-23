@@ -40,6 +40,14 @@
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       cursor: pointer;
       overflow: hidden;
+      @include laptopXL{
+        width: 750px;
+        height: 600px;
+      }
+      @include laptopmiddle{
+        width: 500px;
+        height: 400px;
+      }
       @include middle{
         width: 350px;
         height: 280px;
